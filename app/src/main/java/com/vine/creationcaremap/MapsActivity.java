@@ -1,17 +1,10 @@
 package com.vine.creationcaremap;
 
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-
-import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-
 import android.widget.Toast;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -20,28 +13,13 @@ import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
-
-import com.google.maps.android.collections.GroundOverlayManager;
-import com.google.maps.android.collections.MarkerManager;
-import com.google.maps.android.collections.PolygonManager;
-import com.google.maps.android.collections.PolylineManager;
 import com.google.maps.android.data.Feature;
-import com.google.maps.android.data.Renderer;
 import com.google.maps.android.data.geojson.GeoJsonFeature;
 import com.google.maps.android.data.geojson.GeoJsonLayer;
 import com.google.maps.android.data.geojson.GeoJsonPointStyle;
-import com.google.maps.android.data.kml.KmlLayer;
-import com.google.maps.android.data.kml.KmlContainer;
-import com.google.maps.android.data.kml.KmlPlacemark;
-import com.google.maps.android.data.kml.KmlPolygon;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.xmlpull.v1.XmlPullParserException;
-
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -68,7 +46,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     private static float magnitudeToColor(double magnitude) {
         if (magnitude < 1.0) {
-            return BitmapDescriptorFactory.HUE_CYAN;
+            return BitmapDescriptorFactory.HUE_AZURE;
         } else if (magnitude < 2.5) {
             return BitmapDescriptorFactory.HUE_GREEN;
         } else if (magnitude < 4.5) {

@@ -2,5 +2,5 @@
     <string name="app_name">Creation Care Map</string>
     <string name="title_activity_maps">Creation Care Map</string>
 <!--    <string name="geojson_url">https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson</string>-->
-    <string name="geojson_url"> https://raw.githubusercontent.com/Diddian/CreationCare-Map/master/Locations.geojson</string>
+    <string name="geojson_url"> https://raw.githubusercontent.com/Diddian/Creation-Care-Map/master/app/src/main/java/com/vine/creationcaremap/Locations.geojson</string>
 </resources>
