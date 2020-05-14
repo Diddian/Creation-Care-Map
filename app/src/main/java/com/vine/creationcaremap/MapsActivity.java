@@ -42,17 +42,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     /**
-     * Assigns a color based on the given magnitude
+     * Assigns a color based on the given shop type
      */
-    private static float magnitudeToColor(double magnitude) {
-        if (magnitude < 1.0) {
-            return BitmapDescriptorFactory.HUE_AZURE;
-        } else if (magnitude < 2.5) {
+    private static float category(String shopType) {
+        if (shopType == "Bakery") {
+            return BitmapDescriptorFactory.HUE_VIOLET;
+        } else if (shopType == "Butcher & Deli") {
+            return BitmapDescriptorFactory.HUE_ORANGE;
+        } else if (shopType == "Food & Drink (Eco-Friendly / Bulk)") {
             return BitmapDescriptorFactory.HUE_GREEN;
-        } else if (magnitude < 4.5) {
+        } else if (shopType == "Bath & Beauty (Eco-Friendly / Bulk)") {
+            return BitmapDescriptorFactory.HUE_BLUE;
+        } else if (shopType == "Fashion") {
             return BitmapDescriptorFactory.HUE_YELLOW;
+        } else if (shopType == "Market") {
+            return BitmapDescriptorFactory.HUE_MAGENTA;
         } else {
-            return BitmapDescriptorFactory.HUE_RED;
+            return BitmapDescriptorFactory.HUE_AZURE;
         }
     }
 
@@ -102,20 +108,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Iterate over all the features stored in the layer
         for (GeoJsonFeature feature : layer.getFeatures()) {
             // Check if the magnitude property exists
-            if (feature.getProperty("mag") != null && feature.hasProperty("place")) {
-                double magnitude = Double.parseDouble(feature.getProperty("mag"));
+            if (feature.getProperty("shop-type") != null && feature.hasProperty("title")) {
+               String shopType = feature.getProperty("shop-type");
 
                 // Get the icon for the feature
                 BitmapDescriptor pointIcon = BitmapDescriptorFactory
-                        .defaultMarker(magnitudeToColor(magnitude));
+                        .defaultMarker(category(shopType));
 
                 // Create a new point style
                 GeoJsonPointStyle pointStyle = new GeoJsonPointStyle();
 
                 // Set options for the point style
                 pointStyle.setIcon(pointIcon);
-                pointStyle.setTitle("Magnitude of " + magnitude);
-                pointStyle.setSnippet("Earthquake occured " + feature.getProperty("place"));
+                pointStyle.setTitle(feature.getProperty("title"));
+                pointStyle.setSnippet(feature.getProperty("description") + feature.getProperty("place"));
 
                 // Assign the point style to the feature
                 feature.setPointStyle(pointStyle);
