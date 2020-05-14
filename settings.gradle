@@ -1,0 +1,2 @@
+rootProject.name='Creation Care Map'
+include ':app'

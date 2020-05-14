@@ -1,0 +1,10 @@
+<resources>
+    <!--
+    Package name:
+    com.vine.creationcaremap
+
+    SHA-1 certificate fingerprint:
+    30:7C:B7:56:DC:A9:7E:FB:0B:3A:24:E0:B7:1E:89:67:9D:41:0C:0D
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAnVH1DMIqe5hxLXloc_Bogh8BBTN5tGZE</string>
+</resources>
