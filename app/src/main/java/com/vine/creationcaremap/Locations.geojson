@@ -1,0 +1,721 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1765289,
+          22.2763367,
+          0
+        ]
+      },
+      "properties": {
+        "name": "The Vine Church"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2326498,
+          22.4730438,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Mayse Artisan Bakery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1515992,
+          22.2833472,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Levain Bakery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1516326,
+          22.2817761,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Levain Bakery Caine Road"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1708277,
+          22.2757866,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Coco Espresso x Levain Bakery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.0011157,
+          22.263876,
+          0
+        ]
+      },
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "bakery",
+        "name": "Village Bakery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1534679,
+          22.2830105,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Feather & Bone - Central"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2602778,
+          22.3356787,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Feather & Bone - Clearwater Bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1512508,
+          22.2800228,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Feather & Bone - Mid Levels"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1713606,
+          22.2768303,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Feather & Bone - Wanchai"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1840875,
+          22.2695352,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Feather & Bone - Happy Valley"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1388683,
+          22.2876058,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Feather & Bone - Sai Ying Pun"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1091824,
+          22.3686699,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Feather & Bone - Tsuen Wan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1270801,
+          22.2817477,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Slowood",
+        "description": "Also:<br>Household<br>Bath & Beauty"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1167085,
+          22.3658505,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Regency Spices"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1484562,
+          22.2845007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "teakha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.136381,
+          22.284845,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Plantation by teakha 茶莊"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1494934,
+          22.2852553,
+          0
+        ]
+      },
+      "properties": {
+        "name": "YUAN HENG SPICE COMPANY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1426443,
+          22.2852246,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Live Zero Bulk Foods - Sai Ying Pun",
+        "description": "Also:<br>Household<br>Bath & Beauty"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2710891,
+          22.3805936,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Live Zero Bulk Foods - Sai Kung",
+        "description": "Also:<br>Household<br>Bath & Beauty"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.175433,
+          22.300472,
+          0
+        ]
+      },
+      "properties": {
+        "name": "vom FASS Hong Kong",
+        "description": "Other locations:<br>Admiralty<br>Kowloon Tong<br>Sha Tin<br>Yuen Long"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1778846,
+          22.277688,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lively Life",
+        "description": "Also:<br>Household<br>Bath & Beauty"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1498113,
+          22.2829992,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SpiceBox Organics Market & Café",
+        "description": "Also:<br>Household<br>Bath & Beauty"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.127098,
+          22.282861,
+          0
+        ]
+      },
+      "properties": {
+        "name": "SpiceBox Organics Store & Café",
+        "description": "Also:<br>Household<br>Bath & Beauty"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2712484,
+          22.3807325,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Seed",
+        "description": "Also available:<br>Household<br>Bath & Beauty"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1684939,
+          22.2764046,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Edgar",
+        "description": "Also:<br>Household<br>Bath & Beauty<br>Pet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.122069,
+          22.2817555,
+          0
+        ]
+      },
+      "properties": {
+        "name": "FoodCraft",
+        "description": "Also:<br>Household<br>Bath & Beauty"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.164424,
+          22.2776096,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Great Food Hall",
+        "description": "Contains:<br>- Ecostore<br>- Vom FASS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1701335,
+          22.317306,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Organic We",
+        "description": "Also:<br>Household<br>Bath & Beauty<br>Pet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.152098,
+          22.2832341,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Bathe to Basics",
+        "description": "Also:<br>Household"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.154082,
+          22.2826007,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lush Fresh Handmade Cosmetics (Soho Square)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1583992,
+          22.2818895,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lush Fresh Handmade Cosmetic (Central MTR Station)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1668799,
+          22.2950249,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lush Fresh Handmade Cosmetics (Harbour City LCX)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1742345,
+          22.2944049,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lush Fresh Handmade Cosmetic (K11 Musea)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.173887,
+          22.299802,
+          0
+        ]
+      },
+      "properties": {
+        "name": "LUSH Fresh Handmade Cosmetics (Granville Road)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.183043,
+          22.28051,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lush Fresh Handmade Cosmetic (Causeway Bay Lockhart Road)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1852834,
+          22.2802128,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lush Fresh Handmade Cosmetics (Great George Street)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.2134632,
+          22.3229379,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lush Fresh Handmade Cosmetics (Telford Plaza)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1875319,
+          22.379888,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lush Fresh Handmade Cosmetics (Shatin New Town Plaza)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.9765037,
+          22.3932499,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Lush Fresh Handmade Cosmetic (Tuen Mun Town Plaza)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1449275,
+          22.2868407,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Green Ladies"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1778322,
+          22.277894,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Green Ladies Wanchai"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1807255,
+          22.2783263,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Wan Chai Wet Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1737208,
+          22.2745394,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Wan Chai Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1534696,
+          22.2831966,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Gage Street Day Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.142421,
+          22.285976,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sai Ying Pun Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1286074,
+          22.2816862,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Smithfield Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1360276,
+          22.2856546,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Shek Tong Tsui Market and Cooked Food Centre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.996593,
+          22.266914,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Mui Wo Market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.9422812,
+          22.2887602,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Fu Tung Market"
+      }
+    }
+  ]
+}
