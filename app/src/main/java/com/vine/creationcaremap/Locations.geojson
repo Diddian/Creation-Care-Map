@@ -12,7 +12,11 @@
         ]
       },
       "properties": {
-        "name": "The Vine Church"
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "name": "The Vine Church",
+        "shop-type": "Church",
+        "marker-symbol": "religious-christian"
       }
     },
     {
@@ -26,7 +30,9 @@
         ]
       },
       "properties": {
-        "name": "Mayse Artisan Bakery"
+        "name": "Mayse Artisan Bakery",
+        "shop-type": "Bakery",
+        "marker-symbol": "bakery"
       }
     },
     {
@@ -40,7 +46,9 @@
         ]
       },
       "properties": {
-        "name": "Levain Bakery"
+        "name": "Levain Bakery",
+        "shop-type": "Bakery",
+        "marker-symbol": "bakery"
       }
     },
     {
@@ -54,7 +62,9 @@
         ]
       },
       "properties": {
-        "name": "Levain Bakery Caine Road"
+        "name": "Levain Bakery Caine Road",
+        "shop-type": "Bakery",
+        "marker-symbol": "bakery"
       }
     },
     {
@@ -68,7 +78,9 @@
         ]
       },
       "properties": {
-        "name": "Coco Espresso x Levain Bakery"
+        "name": "Coco Espresso x Levain Bakery",
+        "shop-type": "Bakery",
+        "marker-symbol": "bakery"
       }
     },
     {
@@ -83,9 +95,9 @@
       },
       "properties": {
         "marker-color": "#7e7e7e",
-        "marker-size": "medium",
         "marker-symbol": "bakery",
-        "name": "Village Bakery"
+        "name": "Village Bakery",
+        "shop-type": "Bakery"
       }
     },
     {
@@ -99,7 +111,11 @@
         ]
       },
       "properties": {
-        "name": "Feather & Bone - Central"
+        "name": "Feather & Bone - Central",
+        "marker-symbol": "deli",
+        "description": "",
+        "marker-color": "",
+        "shop-type": "Butcher & Deli"
       }
     },
     {
@@ -113,7 +129,8 @@
         ]
       },
       "properties": {
-        "name": "Feather & Bone - Clearwater Bay"
+        "name": "Feather & Bone - Clearwater Bay",
+        "shop-type": "Butcher & Deli"
       }
     },
     {
@@ -127,7 +144,8 @@
         ]
       },
       "properties": {
-        "name": "Feather & Bone - Mid Levels"
+        "name": "Feather & Bone - Mid Levels",
+        "shop-type": "Butcher & Deli"
       }
     },
     {
@@ -141,7 +159,10 @@
         ]
       },
       "properties": {
-        "name": "Feather & Bone - Wanchai"
+        "marker-color": "#7e7e7e",
+        "marker-symbol": "",
+        "name": "Feather & Bone - Wanchai",
+        "shop-type": "Butcher & Deli"
       }
     },
     {
@@ -155,7 +176,8 @@
         ]
       },
       "properties": {
-        "name": "Feather & Bone - Happy Valley"
+        "name": "Feather & Bone - Happy Valley",
+        "shop-type": "Butcher & Deli"
       }
     },
     {
@@ -169,7 +191,8 @@
         ]
       },
       "properties": {
-        "name": "Feather & Bone - Sai Ying Pun"
+        "name": "Feather & Bone - Sai Ying Pun",
+        "shop-type": "Butcher & Deli"
       }
     },
     {
@@ -183,7 +206,8 @@
         ]
       },
       "properties": {
-        "name": "Feather & Bone - Tsuen Wan"
+        "name": "Feather & Bone - Tsuen Wan",
+        "shop-type": "Butcher & Deli"
       }
     },
     {
@@ -198,7 +222,8 @@
       },
       "properties": {
         "name": "Slowood",
-        "description": "Also:<br>Household<br>Bath & Beauty"
+        "description": "Also:<br>Household<br>Bath & Beauty",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -212,7 +237,8 @@
         ]
       },
       "properties": {
-        "name": "Regency Spices"
+        "name": "Regency Spices",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -226,7 +252,8 @@
         ]
       },
       "properties": {
-        "name": "teakha"
+        "name": "teakha",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -240,7 +267,8 @@
         ]
       },
       "properties": {
-        "name": "Plantation by teakha 茶莊"
+        "name": "Plantation by teakha 茶莊",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -254,7 +282,8 @@
         ]
       },
       "properties": {
-        "name": "YUAN HENG SPICE COMPANY"
+        "name": "YUAN HENG SPICE COMPANY",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -269,7 +298,8 @@
       },
       "properties": {
         "name": "Live Zero Bulk Foods - Sai Ying Pun",
-        "description": "Also:<br>Household<br>Bath & Beauty"
+        "description": "Also:<br>Household<br>Bath & Beauty",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -284,7 +314,8 @@
       },
       "properties": {
         "name": "Live Zero Bulk Foods - Sai Kung",
-        "description": "Also:<br>Household<br>Bath & Beauty"
+        "description": "Also:<br>Household<br>Bath & Beauty",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -299,7 +330,8 @@
       },
       "properties": {
         "name": "vom FASS Hong Kong",
-        "description": "Other locations:<br>Admiralty<br>Kowloon Tong<br>Sha Tin<br>Yuen Long"
+        "description": "Other locations:<br>Admiralty<br>Kowloon Tong<br>Sha Tin<br>Yuen Long",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -314,7 +346,8 @@
       },
       "properties": {
         "name": "Lively Life",
-        "description": "Also:<br>Household<br>Bath & Beauty"
+        "description": "Also:<br>Household<br>Bath & Beauty",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -329,7 +362,8 @@
       },
       "properties": {
         "name": "SpiceBox Organics Market & Café",
-        "description": "Also:<br>Household<br>Bath & Beauty"
+        "description": "Also:<br>Household<br>Bath & Beauty",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -344,7 +378,8 @@
       },
       "properties": {
         "name": "SpiceBox Organics Store & Café",
-        "description": "Also:<br>Household<br>Bath & Beauty"
+        "description": "Also:<br>Household<br>Bath & Beauty",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -359,7 +394,8 @@
       },
       "properties": {
         "name": "Seed",
-        "description": "Also available:<br>Household<br>Bath & Beauty"
+        "description": "Also available:<br>Household<br>Bath & Beauty",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -374,7 +410,8 @@
       },
       "properties": {
         "name": "Edgar",
-        "description": "Also:<br>Household<br>Bath & Beauty<br>Pet"
+        "description": "Also:<br>Household<br>Bath & Beauty<br>Pet",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -389,7 +426,8 @@
       },
       "properties": {
         "name": "FoodCraft",
-        "description": "Also:<br>Household<br>Bath & Beauty"
+        "description": "Also:<br>Household<br>Bath & Beauty",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -404,7 +442,8 @@
       },
       "properties": {
         "name": "Great Food Hall",
-        "description": "Contains:<br>- Ecostore<br>- Vom FASS"
+        "description": "Contains:<br>- Ecostore<br>- Vom FASS",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -419,7 +458,8 @@
       },
       "properties": {
         "name": "Organic We",
-        "description": "Also:<br>Household<br>Bath & Beauty<br>Pet"
+        "description": "Also:<br>Household<br>Bath & Beauty<br>Pet",
+        "shop-type": "Food & Drink (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -434,7 +474,8 @@
       },
       "properties": {
         "name": "Bathe to Basics",
-        "description": "Also:<br>Household"
+        "description": "Also:<br>Household",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -448,7 +489,8 @@
         ]
       },
       "properties": {
-        "name": "Lush Fresh Handmade Cosmetics (Soho Square)"
+        "name": "Lush Fresh Handmade Cosmetics (Soho Square)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -462,7 +504,10 @@
         ]
       },
       "properties": {
-        "name": "Lush Fresh Handmade Cosmetic (Central MTR Station)"
+        "marker-color": "#7e7e7e",
+        "marker-symbol": "",
+        "name": "Lush Fresh Handmade Cosmetic (Central MTR Station)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -476,7 +521,8 @@
         ]
       },
       "properties": {
-        "name": "Lush Fresh Handmade Cosmetics (Harbour City LCX)"
+        "name": "Lush Fresh Handmade Cosmetics (Harbour City LCX)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -490,7 +536,8 @@
         ]
       },
       "properties": {
-        "name": "Lush Fresh Handmade Cosmetic (K11 Musea)"
+        "name": "Lush Fresh Handmade Cosmetic (K11 Musea)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -504,7 +551,8 @@
         ]
       },
       "properties": {
-        "name": "LUSH Fresh Handmade Cosmetics (Granville Road)"
+        "name": "LUSH Fresh Handmade Cosmetics (Granville Road)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -518,7 +566,8 @@
         ]
       },
       "properties": {
-        "name": "Lush Fresh Handmade Cosmetic (Causeway Bay Lockhart Road)"
+        "name": "Lush Fresh Handmade Cosmetic (Causeway Bay Lockhart Road)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -532,7 +581,8 @@
         ]
       },
       "properties": {
-        "name": "Lush Fresh Handmade Cosmetics (Great George Street)"
+        "name": "Lush Fresh Handmade Cosmetics (Great George Street)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -546,7 +596,8 @@
         ]
       },
       "properties": {
-        "name": "Lush Fresh Handmade Cosmetics (Telford Plaza)"
+        "name": "Lush Fresh Handmade Cosmetics (Telford Plaza)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -560,7 +611,8 @@
         ]
       },
       "properties": {
-        "name": "Lush Fresh Handmade Cosmetics (Shatin New Town Plaza)"
+        "name": "Lush Fresh Handmade Cosmetics (Shatin New Town Plaza)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -574,7 +626,8 @@
         ]
       },
       "properties": {
-        "name": "Lush Fresh Handmade Cosmetic (Tuen Mun Town Plaza)"
+        "name": "Lush Fresh Handmade Cosmetic (Tuen Mun Town Plaza)",
+        "shop-type": "Bath & Beauty (Eco-Friendly / Bulk)"
       }
     },
     {
@@ -588,7 +641,8 @@
         ]
       },
       "properties": {
-        "name": "Green Ladies"
+        "name": "Green Ladies",
+        "shop-type": "Fashion"
       }
     },
     {
@@ -602,7 +656,8 @@
         ]
       },
       "properties": {
-        "name": "Green Ladies Wanchai"
+        "name": "Green Ladies Wanchai",
+        "shop-type": "Fashion"
       }
     },
     {
@@ -616,7 +671,8 @@
         ]
       },
       "properties": {
-        "name": "Wan Chai Wet Market"
+        "name": "Wan Chai Wet Market",
+        "shop-type": "Market"
       }
     },
     {
@@ -630,7 +686,8 @@
         ]
       },
       "properties": {
-        "name": "Wan Chai Market"
+        "name": "Wan Chai Market",
+        "shop-type": "Market"
       }
     },
     {
@@ -644,7 +701,8 @@
         ]
       },
       "properties": {
-        "name": "Gage Street Day Market"
+        "name": "Gage Street Day Market",
+        "shop-type": "Market"
       }
     },
     {
@@ -658,7 +716,8 @@
         ]
       },
       "properties": {
-        "name": "Sai Ying Pun Market"
+        "name": "Sai Ying Pun Market",
+        "shop-type": "Market"
       }
     },
     {
@@ -672,7 +731,8 @@
         ]
       },
       "properties": {
-        "name": "Smithfield Market"
+        "name": "Smithfield Market",
+        "shop-type": "Market"
       }
     },
     {
@@ -686,7 +746,8 @@
         ]
       },
       "properties": {
-        "name": "Shek Tong Tsui Market and Cooked Food Centre"
+        "name": "Shek Tong Tsui Market and Cooked Food Centre",
+        "shop-type": "Market"
       }
     },
     {
@@ -700,7 +761,8 @@
         ]
       },
       "properties": {
-        "name": "Mui Wo Market"
+        "name": "Mui Wo Market",
+        "shop-type": "Market"
       }
     },
     {
@@ -714,7 +776,8 @@
         ]
       },
       "properties": {
-        "name": "Fu Tung Market"
+        "name": "Fu Tung Market",
+        "shop-type": "Market"
       }
     }
   ]
