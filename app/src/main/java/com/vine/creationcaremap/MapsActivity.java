@@ -1,6 +1,13 @@
 package com.vine.creationcaremap;
 
+import androidx.annotation.DrawableRes;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,7 +40,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
     private LatLngBounds HONGKONG = new LatLngBounds(
 //            new LatLng(22.35,114), new LatLng(22.35,114.22));
-       new LatLng(22.3,114), new LatLng(22.4,114.3));
+       new LatLng(22,114), new LatLng(22.4,114.3));
 
     private final static String mLogTag = "GeoJsonDemo";
 
@@ -42,25 +49,40 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     /**
-     * Assigns a color based on the given shop type
+     * Assigns a color marker based on the given shop type
      */
-    private static float shopColour(String shopType) {
-        if (shopType == "1") {
-            return BitmapDescriptorFactory.HUE_VIOLET;
-        } else if (shopType == "Butcher & Deli") {
-            return BitmapDescriptorFactory.HUE_ORANGE;
-        } else if (shopType == "Food & Drink (Eco-Friendly / Bulk)") {
-            return BitmapDescriptorFactory.HUE_GREEN;
-        } else if (shopType == "Bath & Beauty (Eco-Friendly / Bulk)") {
-            return BitmapDescriptorFactory.HUE_BLUE;
-        } else if (shopType == "Fashion") {
-            return BitmapDescriptorFactory.HUE_YELLOW;
-        } else if (shopType == "Market") {
-            return BitmapDescriptorFactory.HUE_MAGENTA;
+    private static @DrawableRes int shopMarkerColour(String shopType) {
+        if (shopType.contentEquals("Bakery")) {
+            return R.drawable.ic_eph_map_brown;
+        } else if (shopType.contentEquals("Butcher & Deli")) {
+            return R.drawable.ic_eph_map_brick;
+        } else if (shopType.contentEquals("Food & Drink (Eco-Friendly / Bulk)")) {
+            return R.drawable.ic_eph_map_leaf;
+        } else if (shopType.contentEquals("Bath & Beauty (Eco-Friendly / Bulk)")) {
+            return R.drawable.ic_eph_map_purple;
+        } else if (shopType.contentEquals("Fashion")) {
+            return R.drawable.ic_eph_map_red;
+        } else if (shopType.contentEquals("Market")) {
+            return R.drawable.ic_eph_map_darkgreen;
         } else {
-            return BitmapDescriptorFactory.HUE_AZURE;
+            return R.drawable.ic_eph_map_grey;
         }
     }
+
+
+    private BitmapDescriptor bitmapDescriptorFromVector(Context context, @DrawableRes int vectorDrawableResourceId) {
+        Drawable background = ContextCompat.getDrawable(context, R.drawable.ic_eph_map_grey);
+
+        background.setBounds(0, 0, background.getIntrinsicWidth(), background.getIntrinsicHeight());
+        Drawable vectorDrawable = ContextCompat.getDrawable(context, vectorDrawableResourceId);
+        vectorDrawable.setBounds(35, 30, vectorDrawable.getIntrinsicWidth() + 40, vectorDrawable.getIntrinsicHeight() + 20);
+        Bitmap bitmap = Bitmap.createBitmap(background.getIntrinsicWidth(), background.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        background.draw(canvas);
+        vectorDrawable.draw(canvas);
+        return BitmapDescriptorFactory.fromBitmap(bitmap);
+    }
+
 
     private class DownloadGeoJsonFile extends AsyncTask<String, Void, GeoJsonLayer> {
 
@@ -109,11 +131,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         for (GeoJsonFeature feature : layer.getFeatures()) {
             // Check if the magnitude property exists
             if (feature.getProperty("name") != null && feature.hasProperty("shop-type")) {
-               String shopType = feature.getProperty("shop-type");
+               String shopTypeName = feature.getProperty("shop-type");
 
                 // Get the icon for the feature
-                BitmapDescriptor pointIcon = BitmapDescriptorFactory
-                        .defaultMarker(shopColour(shopType));
+//                BitmapDescriptor pointIcon = BitmapDescriptorFactory.defaultMarker(shopColour(shopTypeName));
+                BitmapDescriptor pointIcon = bitmapDescriptorFromVector(this, shopMarkerColour(shopTypeName));
 
                 // Create a new point style
                 GeoJsonPointStyle pointStyle = new GeoJsonPointStyle();
@@ -121,7 +143,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 // Set options for the point style
                 pointStyle.setIcon(pointIcon);
                 pointStyle.setTitle(feature.getProperty("name"));
-                pointStyle.setSnippet(feature.getProperty("description") + feature.getProperty("place"));
+                pointStyle.setSnippet(feature.getProperty("description"));
 
                 // Assign the point style to the feature
                 feature.setPointStyle(pointStyle);
