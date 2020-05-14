@@ -44,8 +44,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     /**
      * Assigns a color based on the given shop type
      */
-    private static float category(String shopType) {
-        if (shopType == "Bakery") {
+    private static float shopColour(String shopType) {
+        if (shopType == "1") {
             return BitmapDescriptorFactory.HUE_VIOLET;
         } else if (shopType == "Butcher & Deli") {
             return BitmapDescriptorFactory.HUE_ORANGE;
@@ -108,19 +108,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Iterate over all the features stored in the layer
         for (GeoJsonFeature feature : layer.getFeatures()) {
             // Check if the magnitude property exists
-            if (feature.getProperty("shop-type") != null && feature.hasProperty("title")) {
+            if (feature.getProperty("name") != null && feature.hasProperty("shop-type")) {
                String shopType = feature.getProperty("shop-type");
 
                 // Get the icon for the feature
                 BitmapDescriptor pointIcon = BitmapDescriptorFactory
-                        .defaultMarker(category(shopType));
+                        .defaultMarker(shopColour(shopType));
 
                 // Create a new point style
                 GeoJsonPointStyle pointStyle = new GeoJsonPointStyle();
 
                 // Set options for the point style
                 pointStyle.setIcon(pointIcon);
-                pointStyle.setTitle(feature.getProperty("title"));
+                pointStyle.setTitle(feature.getProperty("name"));
                 pointStyle.setSnippet(feature.getProperty("description") + feature.getProperty("place"));
 
                 // Assign the point style to the feature
@@ -139,7 +139,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onFeatureClick(Feature feature) {
                 Toast.makeText(MapsActivity.this,
-                        feature.getProperty("name"),
+                        feature.getProperty("shop-type"),
                         Toast.LENGTH_SHORT).show();
             }
 
