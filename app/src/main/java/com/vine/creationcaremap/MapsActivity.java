@@ -35,12 +35,14 @@ import java.net.URL;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap initialMap;
+    private int markerBackground;
+
     public GoogleMap getMap() {
         return initialMap;
     }
     private LatLngBounds HONGKONG = new LatLngBounds(
 //            new LatLng(22.35,114), new LatLng(22.35,114.22));
-       new LatLng(22,114), new LatLng(22.4,114.3));
+       new LatLng(22.18,113.9), new LatLng(22.51,114.3));
 
     private final static String mLogTag = "GeoJsonDemo";
 
@@ -55,7 +57,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         if (shopType.contentEquals("Bakery")) {
             return R.drawable.ic_eph_map_brown;
         } else if (shopType.contentEquals("Butcher & Deli")) {
-            return R.drawable.ic_eph_map_brick;
+            return R.drawable.ic_eph_map_yellow;
         } else if (shopType.contentEquals("Food & Drink (Eco-Friendly / Bulk)")) {
             return R.drawable.ic_eph_map_leaf;
         } else if (shopType.contentEquals("Bath & Beauty (Eco-Friendly / Bulk)")) {
@@ -68,14 +70,36 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             return R.drawable.ic_eph_map_grey;
         }
     }
+    /**
+     * Assigns an icon based on the given shop type
+     */
+    private static @DrawableRes int shopIcon(String shopType) {
+        if (shopType.contentEquals("Bakery")) {
+            return R.drawable.ic_eph_icon_wheat;
+        } else if (shopType.contentEquals("Butcher & Deli")) {
+            return R.drawable.ic_eph_icon_cow;
+        } else if (shopType.contentEquals("Food & Drink (Eco-Friendly / Bulk)")) {
+            return R.drawable.ic_eph_icon_restaurant;
+        } else if (shopType.contentEquals("Bath & Beauty (Eco-Friendly / Bulk)")) {
+            return R.drawable.ic_eph_icon_makeup;
+        } else if (shopType.contentEquals("Fashion")) {
+            return R.drawable.ic_eph_icon_dress;
+        } else if (shopType.contentEquals("Market")) {
+            return R.drawable.ic_eph_icon_store;
+        } else {
+            return R.drawable.ic_eph_icon_empty;
+        }
+    }
 
 
     private BitmapDescriptor bitmapDescriptorFromVector(Context context, @DrawableRes int vectorDrawableResourceId) {
-        Drawable background = ContextCompat.getDrawable(context, R.drawable.ic_eph_map_grey);
+
+
+        Drawable background = ContextCompat.getDrawable(context, markerBackground);
 
         background.setBounds(0, 0, background.getIntrinsicWidth(), background.getIntrinsicHeight());
         Drawable vectorDrawable = ContextCompat.getDrawable(context, vectorDrawableResourceId);
-        vectorDrawable.setBounds(35, 30, vectorDrawable.getIntrinsicWidth() + 40, vectorDrawable.getIntrinsicHeight() + 20);
+        vectorDrawable.setBounds(38, 27, vectorDrawable.getIntrinsicWidth() + 35, vectorDrawable.getIntrinsicHeight() + 16);
         Bitmap bitmap = Bitmap.createBitmap(background.getIntrinsicWidth(), background.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         background.draw(canvas);
@@ -135,7 +159,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 // Get the icon for the feature
 //                BitmapDescriptor pointIcon = BitmapDescriptorFactory.defaultMarker(shopColour(shopTypeName));
-                BitmapDescriptor pointIcon = bitmapDescriptorFromVector(this, shopMarkerColour(shopTypeName));
+                markerBackground = shopMarkerColour(shopTypeName);
+                BitmapDescriptor pointIcon = bitmapDescriptorFromVector(this, shopIcon(shopTypeName));
 
                 // Create a new point style
                 GeoJsonPointStyle pointStyle = new GeoJsonPointStyle();
@@ -192,17 +217,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap Map) {
         retrieveFileFromUrl();
+
         initialMap = Map;
         initialMap.setMapType((GoogleMap.MAP_TYPE_NORMAL));
-        initialMap.getUiSettings().setZoomControlsEnabled(true);
+        initialMap.getUiSettings().setZoomControlsEnabled(false);
         initialMap.getUiSettings().setAllGesturesEnabled(true);
-        initialMap.setMinZoomPreference(11.0f);
+        initialMap.setMinZoomPreference(11.5f);
         initialMap.setLatLngBoundsForCameraTarget(HONGKONG);
         LatLng HongKong = HONGKONG.getCenter();
         initialMap.moveCamera(CameraUpdateFactory.newLatLng(HongKong));
-        Toast.makeText(MapsActivity.this,
-                Boolean.toString(initialMap.getUiSettings().isMapToolbarEnabled()),
-                Toast.LENGTH_SHORT).show();
+
+//        Toast.makeText(MapsActivity.this,
+//                Boolean.toString(initialMap.getUiSettings().isMapToolbarEnabled()),
+//                Toast.LENGTH_SHORT).show();
 
 
 
