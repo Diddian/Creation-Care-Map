@@ -217,7 +217,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap Map) {
         retrieveFileFromUrl();
-
         initialMap = Map;
         initialMap.setMapType((GoogleMap.MAP_TYPE_NORMAL));
         initialMap.getUiSettings().setZoomControlsEnabled(false);
