@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -57,3 +57,23 @@ jobs:
           path: hello-world-ipa/dist/WelcomeWorld-unsigned.ipa
           if-no-files-found: error
           retention-days: 14
+
+      - name: Record build result on test branch
+        if: always()
+        shell: bash
+        env:
+          BUILD_RESULT: ${{ job.status }}
+        run: |
+          set -euo pipefail
+          mkdir -p build-results
+          {
+            echo "status=$BUILD_RESULT"
+            echo "run_id=$GITHUB_RUN_ID"
+            echo "run_url=https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            echo "artifact_name=WelcomeWorld-unsigned-IPA"
+          } > build-results/welcome-world.txt
+          git config user.name github-actions
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git add build-results/welcome-world.txt
+          git commit -m "ci: record Welcome World IPA build result" || true
+          git push origin "HEAD:$GITHUB_REF_NAME"
