@@ -1,0 +1,4 @@
+status=success
+run_id=40535699486
+run_url=https://github.com/Diddian/Creation-Care-Map/actions/runs/40535699486
+artifact_name=WelcomeWorld-unsigned-IPA
