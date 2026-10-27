@@ -1,0 +1,59 @@
+name: Build Welcome World IPA (ChatGPT test)
+
+on:
+  push:
+    branches:
+      - chatgpt-hello-world-ipa-20261027
+    paths:
+      - hello-world-ipa/**
+      - .github/workflows/chatgpt-welcome-ipa.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: xcode-27
+    timeout-minutes: 30
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Install XcodeGen if absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! command -v xcodegen >/dev/null 2>&1; then
+            brew install xcodegen
+          fi
+          xcodegen --version
+          xcodebuild -version
+      - name: Generate Xcode project
+        working-directory: hello-world-ipa
+        run: xcodegen generate --spec project.yml
+      - name: Build unsigned device app
+        working-directory: hello-world-ipa
+        shell: bash
+        run: |
+          set -euo pipefail
+          xcodebuild -project WelcomeWorld.xcodeproj -scheme WelcomeWorld -configuration Release -sdk iphoneos -destination 'generic/platform=iOS' -derivedDataPath "$PWD/.build-ios" CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+      - name: Package and validate IPA
+        working-directory: hello-world-ipa
+        shell: bash
+        run: |
+          set -euo pipefail
+          app=.build-ios/Build/Products/Release-iphoneos/WelcomeWorld.app
+          test -f "$app/Info.plist"
+          test -f "$app/WelcomeWorld"
+          file "$app/WelcomeWorld"
+          mkdir -p dist .ipa-staging/Payload
+          ditto "$app" .ipa-staging/Payload/WelcomeWorld.app
+          ( cd .ipa-staging && zip -qry ../dist/WelcomeWorld-unsigned.ipa Payload )
+          unzip -t dist/WelcomeWorld-unsigned.ipa
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: WelcomeWorld-unsigned-IPA
+          path: hello-world-ipa/dist/WelcomeWorld-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 14
